@@ -1,8 +1,8 @@
-<%-- 
-    Document   : result
-    Created on : Oct 28, 2020, 6:46:23 PM
-    Author     : Au
---%>
+<style>
+    body {
+        background-color: greenyellow;
+    }
+</style>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
         <title>Servlet BasicCalculator</title>
     </head>
     <body>
-        <h1>
+        <h1 align="center">
             The result of <%=Double.valueOf(request.getParameter("NumOne"))%><%=request.getAttribute("symbol")%><%=Double.valueOf(request.getParameter("NumTwo"))%>
             is: <%=request.getAttribute("answer")%>
         </h1>
